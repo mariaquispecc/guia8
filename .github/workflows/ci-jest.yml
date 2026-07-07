@@ -15,14 +15,14 @@ steps:
 - name: Descargar código
 uses: actions/checkout@v4
 # Paso 2: instalar Node.js 20 (el mismo que usas en tu máquina)
-- name: Instalar Node.js 20
+-name: Instalar Node.js 20
 uses: actions/setup-node@v4
 with:
 node-version: 20
 cache: 'npm'
 # Paso 3: instalar las dependencias del proyecto
-- name: Instalar dependencias
+-name: Instalar dependencias
 run: npm install
 # Paso 4: ejecutar todos los tests de Jest
-- name: Ejecutar tests unitarios
+-name: Ejecutar tests unitarios
 run: npm test
